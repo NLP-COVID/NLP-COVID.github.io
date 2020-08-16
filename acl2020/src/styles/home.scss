@@ -1,0 +1,138 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+.header {
+  height: 400px;
+  background-color: $background-light;
+
+  @include respond-to("medium") {
+    height: 500px;
+  }
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: left;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+    @include respond-to("small") {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+
+  &-image {
+    height: 150px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+
+    @include respond-to("small") {
+      height: 200px;
+      margin-bottom: 0;
+    }
+
+    @include respond-to("medium") {
+      height: 300px;
+    }
+  }
+
+  &-text {
+    display: flex;
+    flex-direction: column;
+    color: $body-dark;
+
+    @include respond-to("small") {
+      flex-basis: 430px;
+      text-align: left;
+      width: 50%;
+      align-items: flex-start;
+    }
+
+    @include respond-to("medium") {
+      flex-basis: 500px;
+    }
+  }
+
+  &-name {
+    @include xlarge-font();
+  }
+
+  &-extra-info {
+    margin-top: 1rem;
+    font-style: italic;
+    @include medium-font();
+  }
+
+  &-tagline {
+    @include large-font();
+    margin-top: 1rem;
+    width: 400px;
+  }
+}
+
+.news {
+  &-text, &-text > p {
+    display: inline;
+  }
+}
+
+.news-section, .key-dates-section, .overview-section {
+  max-width: 900px;
+  margin: auto;
+
+  > h4 { 
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+}
+
+.news-section-wrapper, .key-dates-section-wrapper, .overview-section-wrapper {
+  display: flex;
+  margin-bottom: 50px;
+  flex-direction: column;
+
+  p {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.news-date, .key-date-text {
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+.news-item, .key-date-item, .overview-text {
+  display: flex;
+  margin-bottom: 0.2rem;
+}
+
+.extra-date-info {
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+table.key-date-table {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.key-date-info {
+  
+  td.key-date-text {
+    padding-right: 0.8rem;
+  }
+
+  td {
+    padding: 2px;
+  }
+}
