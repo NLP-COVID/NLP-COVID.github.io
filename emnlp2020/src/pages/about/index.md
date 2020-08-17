@@ -10,14 +10,13 @@ organizers:
       organization: University of Melbourne
       role: Workshop Chair
 seo:
-  browserTitle: About | NLP COVID-19 Workshop @ ACL 2020
+  browserTitle: About | NLP COVID-19 Workshop (Part 2) @ EMNLP 2020
   description: 
-  title: About | NLP COVID-19 Workshop @ ACL 2020
+  title: About | NLP COVID-19 Workshop (Part 2) @ EMNLP 2020
 ---
-The 2020 Workshop on Natural Language Processing for COVID-19 will be held in collaboration with ACL 2020.
+The 2020 Workshop on Natural Language Processing for COVID-19 (Part 2) will be held in collaboration with EMNLP 2020.
 
 ### Key Dates
-* We encourage submissions as early as possible.
-* Submissions will be accepted until: June 30, 2020.
-* Please note that submissions that come in close to the final deadline may not be able to be reviewed in time, but will be considered for Abstract-only inclusion in the workshop.
-* Workshops and tutorials: July 09-10, 2020.
+* Submission deadline: Sept 3, 2020 (Anywhere On Earth)
+* Notification date: October 1, 2020
+* Workshop: November 19 or 20, 2020.
